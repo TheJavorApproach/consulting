@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('services')">Services</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </div>
 
+  <!-- Page Sections -->
+  <section id="about" class="section showing">
+    <h1>About Me</h1>
+    <p>My name is Max Javor. I am a 4.0 student at Michigan State University who is studying to be a secondary education teacher of English and psychology. I truly enjoy helping others and would love to work with you! I am a marathon runner and weight lifter who is dedicated to always efficiently and effectively completing all projects. Please look at the services tab to see what I can happily do for you! </p>
+  </section>
+
+  <section id="services" class="section">
+    <h1>My Services</h1>
+    <ul>
+      <li>Profile website creation</li>
+      <li>Website management and maintenance upon creation</li>
+      <li>Consulting</li>
+      <p>I will work with you however you choose. We can work strictly online through the use of phone calls or web meetings, strictly in person in a public setting such as a restaurant or a library, or through a hybrid environment of both online and in person. If there is a different way you would prefer to work together, I am more than welcome to be flexible and match your preferences!</p>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h1>Contact Me</h1>
+     <p>Reach out to me however it best suits you. Expect a response within one business day of contacting me. If I am unavailable to take your call, please feel free to leave a message.</p>
+    <p>Email: maxjavor9@gmail.com</p>
+    <p>Phone: 734-773-9958</p>
+  </section>
+
+  <!-- Section Toggle Script -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      const target = document.getElementById(sectionId);
+
+      // Hide all sections
+      sections.forEach(section => {
+        section.classList.remove('showing');
+      });
+
+      // Show the target section immediately
+      target.classList.add('showing');
+    }
+  </script>
+</body>
 </html>
