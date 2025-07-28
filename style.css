@@ -3,25 +3,28 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #1f1f2e; /* Navy background */
-  color: #e0e0e0; /* Soft gray text for readability */
-  font-size: 16px;
-  line-height: 1.6;
+  background-color: #1f1f2e;
+  color: #e0e0e0;
+  font-size: 20px;
+  line-height: 1.9;
 }
+
+
 
 /* Navbar */
 .navbar {
-  background-color: #e0e0e0; /* Light gray top bar */
+  background-color: #e0e0e0;
   padding: 12px 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-  text-align: center;
   position: sticky;
   top: 0;
   z-index: 100;
   display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
   flex-wrap: wrap;
-  justify-content: center;
 }
+
 
 .navbar button {
   background: none;
