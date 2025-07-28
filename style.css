@@ -101,16 +101,12 @@ ul {
     font-size: 14px;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  /* Keep buttons in a horizontal row on small screens */
   .navbar button {
-    font-size: 1rem;
-    padding: 10px;
-    width: 90%;
-    margin: 6px 0;
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    margin: 4px;
+    width: auto;
   }
 
   .section.showing {
