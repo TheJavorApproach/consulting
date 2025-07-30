@@ -24,6 +24,16 @@ html, body {
   flex-wrap: nowrap;
 }
 
+/* NEW: Logo styling */
+.logo {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #1f1f2e;
+  margin-right: auto;
+  padding: 12px 12px;
+  white-space: nowrap;
+}
+
 .navbar button {
   background: none;
   border: none;
@@ -120,7 +130,7 @@ ul {
   }
 
   p, ul {
-    font-size: 1.2em;
+    font-size: 1.05em;
   }
 
   .section.showing {
